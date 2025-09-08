@@ -3,7 +3,7 @@ A sleek, educational web tool to convert between Unicode code points and charact
 
 Unicode Explorer Screenshot
 
-(Replace with actual screenshot when deployed)
+![alt text](screenshots/image.png)
 
 ✨ Features
 🔁 Two-way conversion: Unicode → Character & Character → Unicode
@@ -14,8 +14,7 @@ Unicode Explorer Screenshot
 ✅ Input validation: Handles errors gracefully
 🧪 Supports hex & decimal: Enter 234 or 0xEA — both work!
 🚀 Live Demo
-👉 https://yourusername.github.io/unicode-explorer/
-(Update this link after deploying to GitHub Pages)
+👉 https://ehsanqasimi.github.io/unicodeToCharacter/
 
 🛠️ How to Use
 1. Clone or Download
