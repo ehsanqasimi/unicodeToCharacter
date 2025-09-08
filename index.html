@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UnicodeToCharacter</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unicode Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div id="container">
 
-        <div class="miniContainer">
-           
-            <input id="input" placeholder="write a unicode" type="text"/>   <br>
-            <input id="submit" type="submit"/> <br>
-            <p id="demo"></p>
-            
-        </div>
-     </div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Unicode Explorer</h1>
+            <p>Convert between Unicode code points and characters.</p>
+        </header>
 
+        <!-- Educational Section -->
+        <section class="info-section">
+            <h2>What is Unicode?</h2>
+            <p>
+                Unicode is a universal character encoding standard that assigns unique numbers (code points) to
+                characters across all languages and symbols.
+                It enables consistent representation of text worldwide, supporting over 140,000 characters including
+                emojis, mathematical symbols, and ancient scripts.
+            </p>
+            <p><strong>Example:</strong> The letter 'ê' has the Unicode code point <code>U+00EA</code>, which is decimal
+                <strong>234</strong>.</p>
+        </section>
 
+        <!-- Main Converter -->
+        <main class="converter">
+            <div class="input-group">
+                <label for="input">Enter Unicode (decimal or hex):</label>
+                <input type="text" id="input" placeholder="e.g., 234 or 0xEA" />
+            </div>
+
+            <div class="button-group">
+                <button id="toChar">→ Character</button>
+                <button id="toCode">→ Unicode</button>
+            </div>
+
+            <div class="result" id="result"></div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>Made with ❤️ by [Your Name]</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
